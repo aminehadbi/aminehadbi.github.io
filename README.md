@@ -1,1 +1,2 @@
-# aminehadbi.github.io
+# Equisym
+Equity Curve Simulator
