@@ -99,7 +99,7 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
             AVG_PERFORMANCE: "Performance moyenne",
             MAX_DRAWDOWN: "Baisse maximale",
             AVG_MAX_DRAWDOWN: "Moyenne des baisses maximales",
-            RETURN_MAX_DRAWDOWN: "Rendement",
+            RETURN_MAX_DRAWDOWN: " rendement par rapport a la baisse maximal ",
             MAX_EQ: "Capital Maximum",
             MIN_EQ: "Capital Minimum",
             MAX_CONSEC_WINS: "Nombre maximum de gains consecutifs",
