@@ -300,7 +300,7 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
         name: "Francais"
     }];
     var m = i.navigator.language || i.navigator.userLanguage;
-    m ? (m = m.substring(0, 2), -1 == ["en", "es"].indexOf(m) && (m = "en")) : m = "en", Rs.Storage = o.$default({
+    m ? (m = m.substring(0, 2), -1 == ["en", "fr"].indexOf(m) && (m = "en")) : m = "en", Rs.Storage = o.$default({
         Lang: m
     }), Rs.changeLang = (() => {
         r.use(Rs.Storage.Lang), Rs.chartOps.chart.xAxis.axisLabel = l("TRADE") + " #", Rs.chartOps.chart.yAxis.axisLabel = l("EQ") + " (" + Rs.Inputs.currencySymbol + ")"
