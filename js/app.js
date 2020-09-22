@@ -121,7 +121,7 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
             H_KELLY: "En théorie des probabilités et choix de portefeuille intertemporel, le critère de Kelly, la stratégie de Kelly, la formule de Kelly ou le pari de Kelly est une formule utilisée pour déterminer la taille optimale d'une série de paris afin de maximiser le logarithme de la richesse"
         }
     };
-    t.useSanitizeValueStrategy("escape").translations("en", r.en).translations("es", r.es).preferredLanguage("en")
+    t.useSanitizeValueStrategy("escape").translations("en", r.en).translations("fr", r.fr).preferredLanguage("en")
 }]), angular.module("MainCtrl", []).controller("MainCtrl", ["$scope", "$rootScope", "$timeout", "$translate", "$mdDialog", "$localStorage", "$window", function (a, e, t, r, n, o, i) {
     Rs = a;
     var s = {},
