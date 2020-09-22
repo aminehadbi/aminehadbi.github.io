@@ -78,7 +78,7 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
             H_EXPECTATION: "The mathematical expectation of any bet is defined as follows: the sum of all possible gains and losses multiplied by their relative probabilities. Written as a formula: e= (w × p) + (-v × 1). e = mathematical expectation, w = gain on the winning bet, p = probability of the win, v = value of the loss, l = probability of the loss",
             H_KELLY: "In probability theory and intertemporal portfolio choice, the Kelly criterion, Kelly strategy, Kelly formula, or Kelly bet is a formula used to determine the optimal size of a series of bets in order to maximize the logarithm of wealth"
         },
-        es: {
+        fr: {
             APP_NAME: "Simulateur de Courbe de Profit",
             PARAMETERS: "Parametres",
             STARTING_EQ: "Capital Initial",
