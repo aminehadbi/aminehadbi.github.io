@@ -17,20 +17,20 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
     }, function (a, e) {
         iconp.icon(e, "data:image/svg+xml, " + a, 24)
     }), a.definePalette("tstarPallete", {
-        50: "f4f5ec",
-        100: "e4e7d1",
-        200: "d2d7b2",
-        300: "c0c793",
-        400: "b3bb7b",
-        500: "a5af64",
-        600: "9da85c",
-        700: "939f52",
-        800: "8a9648",
-        900: "798636",
-        A100: "f8ffd4",
-        A200: "efffa1",
-        A400: "e6ff6e",
-        A700: "e1ff54",
+        50: "f5f5f5",
+        100: "e8e8e8",
+        200: "dcdcdc",
+        300: "cfcfcf",
+        400: "bababa",
+        500: "b0b0b0",
+        600: "9d9d9d",
+        700: "898989",
+        800: "767676",
+        900: "626262",
+        A100: "444444",
+        A200: "313131",
+        A400: "1d1d1d",
+        A700: "0a0a0a",
         contrastDefaultColor: "light",
         contrastDarkColors: ["50", "100", "200", "300", "400", "500", "600", "700", "800", "A100", "A200", "A400", "A700"],
         contrastLightColors: ["900"]
@@ -68,7 +68,7 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
             PRINT: "Print",
             GOT_IT: "Got It",
             H_AVG_PERFORMANCE: "Measures the average of the returns on the investments done over a specific period. It can be positive, representing a gain in value, or negative, representing a loss",
-            H_MAX_DRAWDOWN: "Maximum Drawdown (MDD) is an indicator of downside risk over a specified time period. MDD = (Trough Value – Peak Value) ÷ Peak Value",
+            H_MAX_DRAWDOWN: "Maximum DrawDown (MDD) is an indicator of downside risk over a specified time period. MDD = (Trough Value – Peak Value) ÷ Peak Value",
             H_AVG_MAX_DRAWDOWN: "The maximum drawdown value of each possible scenario (each line) is summed and then divided by the number of scenarios",
             H_RETURN_MAX_DRAWDOWN: "Return over maximum drawdown (RoMaD) is a risk-adjusted return metric. RoMaD = Portfolio Return / Max. Drawdown",
             H_MAX_EQ: "Is the highest equity value obtained in all the possible scenarios",
@@ -79,15 +79,15 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
             H_KELLY: "In probability theory and intertemporal portfolio choice, the Kelly criterion, Kelly strategy, Kelly formula, or Kelly bet is a formula used to determine the optimal size of a series of bets in order to maximize the logarithm of wealth"
         },
         fr: {
-            APP_NAME: "Simulateur de Courbe de Profit",
-            PARAMETERS: "Parametres",
-            STARTING_EQ: "Capital Initial",
+            APP_NAME: "Simulateur de courbe de profit",
+            PARAMETERS: "Paramètres",
+            STARTING_EQ: "Capital initial",
             RISK_PER_TRADE: "Risque par transaction",
-            WIN_PROB: "Probabilite de gains",
+            WIN_PROB: "Probabilité de gains",
             WIN_LOSS_REL: "Ratio Gains:Pertes",
-            TRADES_PER_RUN: "Transactions par scenario",
+            TRADES_PER_RUN: "Transactions par scénario",
             RUNS_LINES: "Nombre de simulations (Lignes)",
-            GRAPH_SCALE: "Echelle du graphique",
+            GRAPH_SCALE: "Échelle du graphique",
             RUN_SIMULATION: "Lancer la simulation",
             GRAPH: "Graphique",
             TRADE: "Transaction",
@@ -95,31 +95,31 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
             MAX: "Maximum",
             MIN: "Minimum",
             AVG: "Moyenne",
-            RESULTS: "Resultats",
+            RESULTS: "Résultats",
             AVG_PERFORMANCE: "Performance moyenne",
             MAX_DRAWDOWN: "Baisse maximale",
             AVG_MAX_DRAWDOWN: "Moyenne des baisses maximales",
-            RETURN_MAX_DRAWDOWN: " rendement par rapport a la baisse maximal ",
-            MAX_EQ: "Capital Maximum",
-            MIN_EQ: "Capital Minimum",
-            MAX_CONSEC_WINS: "Nombre maximum de gains consecutifs",
-            MAX_CONSEC_LOSES: "Nombre maximum de pertes consecutives",
-            EXPECTATION: "Esperance",
-            KELLY: "Critere de Kelly",
-            DOWNLOAD_DATA: "Telechargement",
+            RETURN_MAX_DRAWDOWN: "Rendement par rapport à la baisse maximale",
+            MAX_EQ: "Capital maximum",
+            MIN_EQ: "Capital minimum",
+            MAX_CONSEC_WINS: "Nombre maximum de gains consécutifs",
+            MAX_CONSEC_LOSES: "Nombre maximum de pertes consécutives",
+            EXPECTATION: "Espérance",
+            KELLY: "Critère de Kelly",
+            DOWNLOAD_DATA: "Téléchargement",
             PRINT: "Imprimer",
             GOT_IT: "Compris",
             H_AVG_PERFORMANCE: "Mesure la moyenne des rendements des investissements réalisés sur une période donnée. Elle peut être positive, représentant un gain de valeur, ou négative, représentant une perte",
-            H_MAX_DRAWDOWN: "Maximum Drawdown (MDD) est un indicateur du risque de baisse sur une période de temps spécifiée. MDD = (Trough Value - Peak Value) ÷ Peak Value",
+            H_MAX_DRAWDOWN: "Le Maximum Drawdown (MDD) est un indicateur du risque de baisse sur une période de temps spécifiée. MDD = (Trough Value - Peak Value) ÷ Peak Value",
             H_AVG_MAX_DRAWDOWN: "La valeur de tirage maximum de chaque scénario possible (chaque ligne) est additionnée puis divisée par le nombre de scénarios",
             H_RETURN_MAX_DRAWDOWN: "Le rendement par rapport au tirage maximal (RoMaD) est une mesure de rendement ajustée au risque. RoMaD = rendement du portefeuille / tirage max.",
-            H_MAX_EQ: "Est la valeur nette la plus élevée obtenue dans tous les scénarios possibles",
-            H_MIN_EQ: "Est la valeur nette la plus basse obtenue dans tous les scénarios possibles",
-            H_MAX_CONSEC_WINS: "Est le nombre maximum de victoires consécutives sur les trades",
-            H_MAX_CONSEC_LOSES: "Est le nombre maximum de pertes consécutives sur les trades",
-            H_EXPECTATION: "L'espérance mathématique de tout pari est définie comme suit: la somme de tous les gains et pertes possibles multipliée par leurs probabilités relatives. Écrit comme une formule: e = (w × p) + (-v × 1). E = espérance mathématique, w = gain sur le pari gagnant, p = probabilité de gain, v = valeur de la perte, l = probabilité de la perte ",
-            H_KELLY: "En théorie des probabilités et choix de portefeuille intertemporel, le critère de Kelly, la stratégie de Kelly, la formule de Kelly ou le pari de Kelly est une formule utilisée pour déterminer la taille optimale d'une série de paris afin de maximiser le logarithme de la richesse"
-        }
+            H_MAX_EQ: "Mesure la valeur nette la plus élevée obtenue dans tous les scénarios possibles",
+            H_MIN_EQ: "Mesure la valeur nette la plus basse obtenue dans tous les scénarios possibles",
+            H_MAX_CONSEC_WINS: "Mesure le nombre maximum de victoires consécutives sur les trades",
+            H_MAX_CONSEC_LOSES: "Mesure le nombre maximum de pertes consécutives sur les trades",
+            H_EXPECTATION: "L'espérance mathématique de tout pari est définie comme suit: la somme de tous les gains et pertes possibles multipliées par leurs probabilités relatives. Écrit comme une formule: e = (w × p) + (-v × 1). E = espérance mathématique, w = gain sur le pari gagnant, p = probabilité de gain, v = valeur de la perte, l = probabilité de la perte ",
+            H_KELLY: "En théorie des probabilités et choix de portefeuille intertemporel, le critère de Kelly est une formule utilisée pour déterminer la taille optimale d'une série de paris afin de maximiser le logarithme de la richesse"
+        }  
     };
     t.useSanitizeValueStrategy("escape").translations("en", r.en).translations("fr", r.fr).preferredLanguage("en")
 }]), angular.module("MainCtrl", []).controller("MainCtrl", ["$scope", "$rootScope", "$timeout", "$translate", "$mdDialog", "$localStorage", "$window", function (a, e, t, r, n, o, i) {
@@ -306,5 +306,5 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
         r.use(Rs.Storage.Lang), Rs.chartOps.chart.xAxis.axisLabel = l("TRADE") + " #", Rs.chartOps.chart.yAxis.axisLabel = l("EQ") + " (" + Rs.Inputs.currencySymbol + ")"
     }), Rs.changeLang(), Rs.run();
     for (var u = i.location.href.split("/"), h = u[0] + "/", g = 2; g < u.length - 1; g++) h = h + "/" + u[g];
-    Rs.baseURL = h + "/", Rs.Version = 201810160921
+    Rs.baseURL = h + "/", Rs.Version = 202009220921
 }]);
