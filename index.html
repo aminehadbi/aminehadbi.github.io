@@ -185,6 +185,10 @@
 		<h2> Documentation - Equity Curve Simulator</h2>
 		<p> This simulator calculates possible scenarios of your equity curve. <br>
 			Use it to estimate the future performance of your equity curve, by adjusting it for your trading style.</p>
+		
+		<h3>What is the impact of the various parameters ?</h3>
+		<p><b>Risk per trade</b><br> The risk per trade value can make or break a strategy. <br> Try raising it higher than the Kelly criterion and notice how even statistically profitable odds can ruin you.</p>
+		<p><b>Win probability</b> and the <b>Win/Loss ratio</b><br> These 2 values need to be looked at together. A high win probability doesn't matter if your win loss ratio is terrible and vice versa. Together, they can be computed to get the Expected value = P(right) * R(right) – (1-P(right)) * R(wrong) </p>
 	</div>
 </body>
 </html>
