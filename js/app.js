@@ -225,7 +225,7 @@ app = angular.module("Equisym", ["ngMaterial", "ngMessages", "ngSanitize", "ngCs
     }), s.calcVars = (() => {
         Rs.Vars = v = {}, g = Rs.Inputs, c = s.Control, v.Accuracy = g.winProb / 100, v.PayOff = g.winRatio, v.Kelly = d3.format(",.2f")(v.Accuracy - (1 - v.Accuracy) / v.PayOff), v.Expectation = d3.format(",.2f")(v.Accuracy * v.PayOff - (1 - v.Accuracy)), v.minEq = d3.format(",.2f")(c.minEq), v.maxEq = d3.format(",.2f")(c.maxEq), v.maxCW = d3.format(",.0f")(c.maxCW), v.maxCL = d3.format(",.0f")(c.maxCL), v.avgMaxDD = 0, v.maxDD = 0, v.maxDDAbs = 0, s.Results.forEach(a => {
             v.avgMaxDD += a.maxDD, v.maxDD = Math.max(v.maxDD, a.maxDD), v.maxDDAbs = Math.max(v.maxDDAbs, a.maxDDAbs)
-        }), v.maxDD = d3.format(",.2%")(v.maxDD), v.maxDDAbs = d3.format(",.2f")(v.maxDDAbs), v.avgMaxDDRaw = v.avgMaxDD / g.runs, v.avgMaxDD = d3.format(",.2%")(v.avgMaxDDRaw), v.avgPerfAbs = d3.format(",.2f")(c.lastTAvg - g.startingEq), v.avgPerf = d3.format(",.2%")((c.lastTAvg - g.startingEq) / g.startingEq), v.retMaxDD = d3.format(",.2%")(((v.avgPerfAbs)) / (Math.abs(v.avgMaxDDRaw))), Rs.Vars = v
+        }), v.maxDD = d3.format(",.2%")(v.maxDD), v.maxDDAbs = d3.format(",.2f")(v.maxDDAbs), v.avgMaxDDRaw = v.avgMaxDD / g.runs, v.avgMaxDD = d3.format(",.2%")(v.avgMaxDDRaw), v.avgPerfAbs = d3.format(",.2f")(c.lastTAvg - g.startingEq), v.avgPerf = d3.format(",.2%")((c.lastTAvg - g.startingEq) / g.startingEq), v.retMaxDD = d3.format(",.2%")(((v.avgPerfAbs)) / (Math.abs(v.avgMaxDD))), Rs.Vars = v
     }), Rs.chartOps = {
         chart: {
             type: "lineChart",
